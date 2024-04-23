@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Portfolio.css" />
+    <script src="Portfolio.js" defer></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Tilt+Neon&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+
+  <body class="wrapper">
+    <nav class="wrapper">
+      <ul>
+        <div id="content">
+          <div id="CvHeader">
+            <img src="imgs/me.jpg" alt="Photo de moi" id="me" height="180" />
+            <h1 id="name">BAFODÉ CISSÉ</h1>
+            <h5 id="title">Developpeur web full stack</h5>
+            <h6 id="alternance">
+              <span>Recherche alternance</span>
+              <br />
+              <span>Septembre 2024</span>
+              <br />
+              <span>14 mois</span>
+              <br />
+              <span> 3 semaines en entreprise / 1 semaine en formation</span>
+            </h6>
+          </div>
+          <li class="hover_li"><a href="#section-1">Présentation</a></li>
+          <li class="hover_li"><a href="#section-2">Compétences</a></li>
+          <li class="hover_li"><a href="#section-3">Projets</a></li>
+          <li class="hover_li"><a href="#section-4">Me contacter</a></li>
+        </div>
+      </ul>
+      <div class="downloadCV">
+        <span class="material-symbols-rounded"> download </span>
+        <a href="imgs/CV 1.pdf" download="CV_bafodé_cissé.pdf" id="cv"
+          >Télécharger mon CV</a
+        >
+      </div>
+    </nav>
+
+    <main>
+      <section id="section-1" class="cards">
+        <h1>Présentation</h1>
+        <p>
+          Je suis Bafodé, j'ai 21 ans et je suis développeur en formation à la
+          Web@cademie by Epitech.
+        </p>
+        <br />
+        <p>
+          J'ai découvert le code en 2de dans une option "Informatique et
+          Création Numérique". Après avoir obtenu mon BAC S, c'est en L1 MIASHS
+          que je me suis passionné pour le code en travaillant sur Python. Enfin
+          une matière qui me donnait envie de travailler toujours plus,
+          d'apprendre sans voir le temps passer ! Aujourd'hui, à Epitech, ce
+          n'est pas seulement une maTière mais une formation toute entière
+          consacrée au développement !
+        </p>
+        <br />
+        <p>
+          Epitech, c'est une école sans cours théorique : j'apprends en
+          réalisant des projets. Le projet de groupe qui m'a le plus marqué :
+          Spotify (en React). Dans ce projet, j'ai appris et maîtrisé un nouveau
+          langage, j'ai développé mon d'esprit d'équipe et ai su m'adapter à des
+          situations nouvelles : blocage technique, bug à résoudre.... Ce projet
+          m'a surtout appris persévérance, autonomie et réactivité : des
+          qualités qui sont essentielles dans le monde de l'entreprise.
+        </p>
+        <br />
+        <p>
+          Lorsque je ne code pas, j'aime bien regarder du football, des animés,
+          des séries, des films ou encore jouer à des jeux vidéos.
+        </p>
+      </section>
+      <section id="section-2" class="cards">
+        <h1>Compétences</h1>
+        <p>Les langages que je maitrise le mieux :</p>
+        <br />
+        <p></p>
+        <ul id="competences">
+          <li class="comp_li" id="one">
+            <img src="imgs/html5.svg" height="40" alt="logo html5" />
+          </li>
+          <li class="comp_li" id="two">
+            <img src="imgs/css.svg" height="40" alt=" logo css" />
+          </li>
+          <li class="comp_li" id="three">
+            <img src="imgs/js.svg" height="40" alt=" logo js" />
+          </li>
+          <li class="comp_li" id="four">
+            <img src="imgs/react.svg" height="40" alt=" logo react" />
+          </li>
+          <li class="comp_li" id="five">
+            <img src="imgs/php.svg" height="40" alt=" logo php" />
+          </li>
+          <li class="comp_li" id="six">
+            <img src="imgs/mysql.svg" height="40" alt="logo mysql" />
+          </li>
+        </ul>
+        <br />
+        <p>
+          De plus, j'ai une très bonne maîtrise de l'anglais (C1) qui est
+          primordial dans les recherches de contenu (et un véritable PLUS dans
+          le monde de l'entreprise !)
+        </p>
+      </section>
+      <section id="section-3" class="cards">
+        <h1>Projets</h1>
+        <p>Les projets qui m'ont le plus marqué :</p>
+        <br />
+        <div class="projects">
+          <div class="card">
+            <div class="first-content">
+              <span
+                >MyCinema
+                <span>
+                  <br /><img src="imgs/html5.svg" alt="Logo html" height="40" />
+                  <img src="imgs/css.svg" alt="Logo CSS" height="40" />
+                  <img src="imgs/php.svg" alt="PHP logo" height="40"
+                /></span>
+              </span>
+            </div>
+            <div class="second-content">
+              <br />
+
+              <span
+                ><p>Cliquez pour plus d'informations &dArr;</p>
+                <br /><a href="#m2-o" class="link-1" id="m-c"
+                  ><img
+                    src="imgs/cinema_recherche_utilisateurs.png"
+                    alt="Cinema recherche utilisateurs"
+                    height="140" /></a
+              ></span>
+              <br />
+
+              <br />
+            </div>
+          </div>
+        </div>
+        <div class="projects">
+          <div class="card">
+            <div class="first-content">
+              <span
+                >MyMeetic
+                <span>
+                  <br /><img src="imgs/html5.svg" alt="Logo html" height="40" />
+                  <img src="imgs/css.svg" alt="Logo CSS" height="40" />
+                  <img src="imgs/php.svg" alt="PHP logo" height="40" /><img
+                    src="imgs/js.svg"
+                    alt="JS logo"
+                    height="40"
+                /></span>
+              </span>
+            </div>
+
+            <div class="second-content">
+              <br />
+              <span
+                ><p>Cliquez pour plus d'informations &dArr;</p>
+                <br />
+                <a href="#m3-o" class="link-1" id="m2-c">
+                  <img
+                    src="imgs/Accueil_mymeetic.png"
+                    alt="Page Mon compte mymeetic"
+                    height="140" /></a
+              ></span>
+              <br />
+              <br />
+            </div>
+          </div>
+        </div>
+        <div class="projects">
+          <div class="card">
+            <div class="first-content">
+              <span
+                >CSSgenerator
+                <span>
+                  <br /><img src="imgs/php.svg" alt="Logo PHP" height="40"
+                /></span>
+              </span>
+            </div>
+
+            <div class="second-content">
+              <br />
+              <span
+                ><p>Cliquez pour plus d'informations &dArr;</p>
+                <br /><a href="#m4-o" class="link-1" id="m3-c"
+                  ><img
+                    src="imgs/spritesheet.png"
+                    alt="Exemple de spritesheet"
+                    height="140" /></a
+              ></span>
+              <br />
+              <br />
+            </div>
+          </div>
+        </div>
+
+        <br />
+        <div class="projects">
+          <div class="card">
+            <div class="first-content">
+              <span
+                >Puissance 4
+                <span>
+                  <br /><img src="imgs/js.svg" alt="Logo JS" height="40"
+                /></span>
+              </span>
+            </div>
+            <div class="second-content">
+              <br />
+              <span
+                ><p>Cliquez pour plus d'informations &dArr;</p>
+                <br /><a href="#m5-o" class="link-1" id="m4-c"
+                  ><img
+                    src="imgs/puissance4_screen1.png"
+                    alt="Screenshot puissance 4"
+                    height="140" /></a
+              ></span>
+              <br />
+              <br />
+            </div>
+          </div>
+        </div>
+        <div class="projects">
+          <div class="card">
+            <div class="first-content">
+              <span
+                >Spotify
+                <span>
+                  <br /><img
+                    src="imgs/react.svg"
+                    alt="Logo react"
+                    height="40" /><img
+                    src="imgs/tailwind.svg"
+                    alt="Logo tailwind"
+                    height="40"
+                /></span>
+              </span>
+            </div>
+
+            <div class="second-content">
+              <br />
+              <span
+                ><p>Cliquez pour plus d'informations &dArr;</p>
+                <br /><a href="#m6-o" class="link-1" id="m5-c"
+                  ><img
+                    src="imgs/spotify_accueil.webp"
+                    alt="Page Mon compte mymeetic"
+                    height="140" /></a
+              ></span>
+              <br />
+              <br />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section-4" class="cards contact">
+        <div>
+          <h1>Me contacter</h1>
+          <h5>Par Mail :</h5>
+          <form id="contact-form">
+            <div class="form-control">
+              <input type="text" id="user_name" name="user_name" required="" />
+              <label>
+                <span style="transition-delay: 0ms">N</span
+                ><span style="transition-delay: 50ms">o</span
+                ><span style="transition-delay: 100ms">m</span
+                ><span style="transition-delay: 150ms"> :</span>
+              </label>
+            </div>
+            <div class="form-control">
+              <input type="email" id="user_email" name="user_email" required />
+              <label>
+                <span style="transition-delay: 0ms">E</span
+                ><span style="transition-delay: 50ms">m</span
+                ><span style="transition-delay: 100ms">a</span
+                ><span style="transition-delay: 150ms"> i</span
+                ><span style="transition-delay: 200ms"> l</span
+                ><span style="transition-delay: 250ms"> :</span>
+              </label>
+            </div>
+            <div class="form-control">
+              <textarea
+                name="message"
+                id="message"
+                required
+                placeholder="Votre message..."
+              ></textarea>
+            </div>
+            <!-- <label for="message">Message</label> -->
+            <button type="submit" class="submit-btn ui-btn">
+              <span> Envoyer </span>
+            </button>
+          </form>
+          <br />
+          <div>
+            <h5><a href="tel:0766244190" id="tel">Ou Par Téléphone</a></h5>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div
+      class="modal-container"
+      id="m2-o"
+      style="--m-background: hsla(0, 0%, 0%, 0.786)"
+    >
+      <div class="modal">
+        <h1 class="modal__title">My Cinema</h1>
+        <video controls height="350" alt="Screenrecord Cinema">
+          <source src="imgs/MyCinema.mp4" type="video/mp4" />
+        </video>
+        <p class="modal__text">
+          <span>
+            <p>
+              MyCinema est un projet durant lequel on a dû un reproduire un site
+              de Cinema avec les fonctionnalités de recherche de films (par
+              genre,distributeur,nom,date de diffusion), recherche
+              d'utilisateurs (screen ci-dessous), recherche de
+              séances,modification d'abonnement et des séances.
+            </p></span
+          >
+        </p>
+        <a href="https://github.com/bcisse14/mycinema"
+          ><button class="modal__btn">
+            Voir le projet sur GitHub &rarr;
+          </button></a
+        >
+        <a href="#m-c" class="link-2"></a>
+      </div>
+    </div>
+
+    <div
+      class="modal-container"
+      id="m3-o"
+      style="--m-background: hsla(0, 0%, 0%, 0.786)"
+    >
+      <div class="modal">
+        <h1 class="modal__title">My Meetic</h1>
+        <video controls height="350" alt="Screenrecord Meetic">
+          <source src="imgs/Meetic.mp4" type="video/mp4" />
+        </video>
+        <p class="modal__text">
+          <span>
+            <p>
+              MyMeetic est le projet qui selon moi a été le plus important dans
+              mon amélioration. En effet, grâce à ce projet j'ai vu pour la
+              première fois la programmation en MVC qui s'avère être utile,
+              c'est aussi mon premier projet fait en POO et j'ai découvert AJAX
+              qui a changé beaucoup de choses dans mes codes qui ont suivis
+            </p></span
+          >
+        </p>
+        <a href="https://github.com/bcisse14/mymeetic"
+          ><button class="modal__btn">
+            Voir le projet sur GitHub &rarr;
+          </button></a
+        >
+        <a href="#m2-c" class="link-2"></a>
+      </div>
+    </div>
+    <div
+      class="modal-container"
+      id="m4-o"
+      style="--m-background: hsla(0, 0%, 0%, 0.786)"
+    >
+      <div class="modal">
+        <h1 class="modal__title">CSS generator</h1>
+        <video controls height="350" alt="Screenrecord spritesheet">
+          <source src="imgs/spritesheet record.mp4" type="video/mp4" />
+        </video>
+        <p class="modal__text">
+          <span>
+            <p>
+              CSSgenerator est le premier projet sur lequel nous avons travaillé
+              en sortie de piscine mais aussi celui qui a le plus mis ma
+              patience et ma motivation à l'épreuve car j'ai du recommencer mon
+              code en entier deux fois, mais au final mes efforts ont été
+              récompensés d'une note de 21. Le but du projet était de reproduire
+              une spritesheet avec des options passées sur le terminal comme
+              "-r" pour la récursivité.
+            </p></span
+          >
+        </p>
+        <a href="https://github.com/bcisse14/cssgenerator"
+          ><button class="modal__btn">
+            Voir le projet sur GitHub &rarr;
+          </button></a
+        >
+        <a href="#m3-c" class="link-2"></a>
+      </div>
+    </div>
+    <div
+      class="modal-container"
+      id="m5-o"
+      style="--m-background: hsla(0, 0%, 0%, 0.786)"
+    >
+      <div class="modal">
+        <h1 class="modal__title">Puissance 4</h1>
+        <video controls height="350" alt="Screenrecord puissance 4">
+          <source src="imgs/Connect 4.mp4" type="video/mp4" />
+        </video>
+        <p class="modal__text">
+          <span>
+            <p>
+              Puissance 4 est un projet qui a pour but d'implémenter en tant que
+              plugin le jeu puissance 4 avec les conditions de victoire.
+            </p>
+          </span>
+        </p>
+        <a href="https://github.com/bcisse14/connect4"
+          ><button class="modal__btn">
+            Voir le projet sur GitHub &rarr;
+          </button></a
+        >
+        <a href="#m4-c" class="link-2"></a>
+      </div>
+    </div>
+    <div
+      class="modal-container"
+      id="m6-o"
+      style="--m-background: hsla(0, 0%, 0%, 0.786)"
+    >
+      <div class="modal">
+        <h1 class="modal__title">Spotify</h1>
+        <video controls height="350" alt="Screenrecord spotify">
+          <source src="imgs/Screenrecord Spotify.mp4" type="video/mp4" />
+        </video>
+        <p class="modal__text">
+          <span>
+            <p>
+              Spotify est le projet que j'ai le plus apprécié car il m'a fait
+              découvrir le React, de plus c'était un travail de groupe qui a
+              duré 2 jours sur lequel nous avons eu la meilleure note de la
+              promo (25/20).
+            </p>
+          </span>
+        </p>
+        <a href="https://github.com/bcisse14/spotify"
+          ><button class="modal__btn">
+            Voir le projet sur GitHub &rarr;
+          </button></a
+        >
+        <a href="#m5-c" class="link-2"></a>
+      </div>
+    </div>
+
+    <footer>&copy; 2024 Bafodé Cissé</footer>
+  </body>
+</html>
