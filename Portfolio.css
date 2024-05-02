@@ -349,6 +349,9 @@ a {
   color: white;
   border-radius: 10px;
 }
+video{
+  height: 160px;
+}
 
 .cards:hover {
   box-shadow: 0 10px 26px 0 rgb(138, 43, 226);
@@ -461,6 +464,9 @@ input{
   .header{
     text-align: start;
     width: 700px;
+  }
+  video{
+    height: 350px;
   }
 
  
